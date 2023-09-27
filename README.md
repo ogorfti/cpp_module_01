@@ -3,9 +3,8 @@
 </p>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/skwOps2YaiU9RP3bzR/giphy.gif" alt="animated" />
+  <img src="https://media.giphy.com/media/XcX3Ae8GSDWN1ciqqi/giphy.gif" alt="animated" />
 </div>
-
 ## 🗣️ About
 
 >Exploring C++ Fundamentals: Memory Allocation, Pointers, References, and More. 
