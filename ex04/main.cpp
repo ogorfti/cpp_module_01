@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 15:25:56 by ogorfti           #+#    #+#             */
-/*   Updated: 2023/09/29 20:27:01 by ogorfti          ###   ########.fr       */
+/*   Updated: 2023/09/30 18:45:25 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main(int ac, char **av)
 		name = av[1];
 		std::fstream sourceFile(name);
 		std::ofstream destFile(name + ".replace");
-		if (sourceFile.is_open() && destFile.is_open())
+		if (sourceFile.is_open() && destFile.is_open() && s1.size() && s2.size())
 		{
 			std::string line;
 			while (std::getline(sourceFile, line, '\0'))
@@ -44,6 +44,6 @@ int main(int ac, char **av)
 			sourceFile.close();
 		}
 		else
-			std::cerr << "Error opening files" << std::endl;
+			std::cerr << "Error" << std::endl;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:43:41 by ogorfti           #+#    #+#             */
-/*   Updated: 2023/09/30 15:01:15 by ogorfti          ###   ########.fr       */
+/*   Updated: 2023/09/30 18:41:02 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void Harl::complain( std::string level )
 		if (levels[i] == level)
 			break;
 	}
+	std::cout << i << std::endl;
 	switch (i)
 	{
 		case 0:
@@ -37,11 +38,13 @@ void Harl::complain( std::string level )
 			(this->*funcs[2])();
 		case 3:
 			(this->*funcs[3])();
+			break;
 		default:
 			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 			break;
 	}
 }
+
 
 int main(int ac, char **av)
 {
