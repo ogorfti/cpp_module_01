@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:43:41 by ogorfti           #+#    #+#             */
-/*   Updated: 2023/09/30 18:41:02 by ogorfti          ###   ########.fr       */
+/*   Updated: 2023/09/30 18:57:13 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void Harl::complain( std::string level )
 		if (levels[i] == level)
 			break;
 	}
-	std::cout << i << std::endl;
 	switch (i)
 	{
 		case 0:
